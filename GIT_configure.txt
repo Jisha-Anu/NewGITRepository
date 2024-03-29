@@ -1,0 +1,63 @@
+C:\Users\WIND\Desktop>cd Demo_GIT
+
+C:\Users\WIND\Desktop\Demo_GIT>git config --global user.name "Jisha"
+
+C:\Users\WIND\Desktop\Demo_GIT>git config --global user.email "jishaanoop14@gmail.com"
+
+
+C:\Users\WIND\Desktop\Demo_GIT>git config  --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+user.name=Jisha
+user.email=jishaanoop14@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+
+C:\Users\WIND\Desktop\Demo_GIT>git init
+Reinitialized existing Git repository in C:/Users/WIND/Desktop/Demo_GIT/.git/
+
+
+C:\Users\WIND\Desktop\Demo_GIT>git status
+
+C:\Users\WIND\Desktop\Demo_GIT>git add --a       (for adding all files)
+
+C:\Users\WIND\Desktop\Demo_GIT>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   GIT configure.txt
+        renamed:    newfile1.html.txt -> newfile (2).txt
+
+
+C:\Users\WIND\Desktop\Demo_GIT>git commit -m "First commit for GIT"
+[main 0b45805] First commit for GIT
+ 2 files changed, 38 insertions(+)
+ create mode 100644 GIT configure.txt
+ rename newfile1.html.txt => newfile (2).txt (100%)
+
+//create newrepository in git site also in the same name
+C:\Users\WIND\Desktop\Demo_GIT>git remote add origin https://github.com/Jisha-Anu/NewGITRepository.git
+
+
+C:\Users\WIND\Desktop\Demo_GIT>git branch -M main
+
+
+C:\Users\WIND\Desktop\Demo_GIT>git push -u origin main
+
